@@ -7,6 +7,11 @@ DNSPING="Ping Google DNS:"
 OPENXS="Current Connections:"
 ENDTEXT="Process Complete."
 
+pingIP () {
+    userIP = $1
+    ping userIP
+};
+
 echo $TITLE
 echo $NICINFO
 
